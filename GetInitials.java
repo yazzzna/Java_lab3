@@ -10,7 +10,7 @@ public class GetInitials {
 
         String gender;
         String end = patronymic.charAt(patronymic.length() - 2) + "" + patronymic.charAt(patronymic.length() - 1);
-        if (patronymic.endsWith("ов")) {
+        if (patronymic.endsWith("ов") || patronymic.endsWith("ич")) {
             gender = "Мужской";
         } else if (patronymic.endsWith("на")) {
             gender = "Женский";
